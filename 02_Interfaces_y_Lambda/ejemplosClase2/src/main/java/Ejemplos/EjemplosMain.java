@@ -26,13 +26,13 @@ public class EjemplosMain {
 
         System.out.println("para implementciones\n------------------");
 
-        CladeImplementa coso = new CladeImplementa();
+        ClaseImplementa coso = new ClaseImplementa();
 
         System.out.println(coso.suma(1, 2));
 
         System.out.println("otra forma");
 
-        InterfaceSuma coso2 = new CladeImplementa();
+        InterfaceSuma coso2 = new ClaseImplementa();
 
         System.out.println(coso2.suma(1,2));
 
