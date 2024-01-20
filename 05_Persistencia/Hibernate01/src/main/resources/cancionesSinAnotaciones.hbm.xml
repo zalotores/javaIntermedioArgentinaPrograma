@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!--
+xml para modelo sin anotaciones, la property es el atributo privado y column name
+es el nombre de columna en la tabla. increment es para auto increment
+-->
+
+<hibernate-mapping>
+    <class name="modelos.CancionSinAnotaciones" table="canciones">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="nombre" type="java.lang.String">
+            <column name="nombre" />
+        </property>
+        <property name="duracion" type="java.lang.String">
+            <column name="duracion" />
+        </property>
+        <property name="interprete" type="java.lang.String">
+            <column name="interprete_id" />
+        </property>
+        <property name="genero" type="java.lang.String">
+            <column name="genero_id" />
+        </property>
+        <property name="disco" type="java.lang.String">
+            <column name="disco_id" />
+        </property>
+    </class>
+</hibernate-mapping>
